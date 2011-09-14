@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>iGoPic</title>
+  <style type="text/css" media="screen">@import "jqtouch/jqtouch.css";</style>
+  <style type="text/css" media="screen">@import "themes/jqt/theme.css";</style>
+  <script src="jqtouch/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+  <script src="extensions/jqt.location.js" type="application/x-javascript" charset="utf-8"></script>
+  <script src="js/igopic.js" language="javascript"></script>
+  <script src="js/igopic.panoramio.js" language="javascript"></script>
+  <script src="js/jquery.imagefit.js" language="javascript"></script>
+  <style type="text/css" media="screen">@import "styles.css";</style>
+  <script language="javascript">
+    var jQT = new $.jQTouch({
+      icon: 'jqtouch.png',
+      addGlossToIcon: false,
+      startupScreen: 'jqt_startup.png',
+      statusBar: 'black'
+    });
+
+    $(iGoPic.init);
+  </script>
+</head>
+<body>
+<div id="jqt">
+  <div id="choose_pic">
+    <div class="toolbar">
+      <h1>iGoPic</h1>
+      <a id="next_pic" class="button back" href="javascript:void(0);">More Pics</a>
+      <a class="button" href="#today">Today's Pics</a>
+    </div>
+    <div class="info"></div>
+    <div id="pic"></div>
+    <ul class="individual">
+      <li><a id="near_me" href="javascript:void(0);"><img height="15" src="close.png"/>&nbsp;Near Me</a></li>
+      <li><a id="far_from_me" href="javascript:void(0);">Far Away</a></li>
+    </ul>
+  </div>
+  <div id="today" class="notransform">
+    <div class="toolbar">
+      <h1>iGoPic</h1>
+      <a class="back" href="#choose_pic">Back</a>
+    </div>
+    <h2>Today's Pics</h2>
+    <ul class="rounded" id="todays_pic_list">
+      <li></li>
+    </ul>
+    <ul class="rounded" style="display:none" id="todays_failures_list">
+      <li></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

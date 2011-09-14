@@ -1,0 +1,47 @@
+#pic img {
+  margin: 5px auto;
+  text-align: left;
+  display: block;
+  border-radius: 15px;
+  border-width: 5px;
+  padding: 5px;
+  background: white;
+}
+
+#todays_pic_list img {
+  border-radius: 15px;
+  border-width: 5px;
+  padding: 5px;
+  background: white;
+  margin-right: 10px;
+}
+
+#near_me, #far_from_me {
+  cursor: pointer;
+}
+
+.individual li {
+  color: white !important;
+}
+
+#choose_pic, #today {
+  background: #FFA700 !important;
+}
+
+#jqt ul li a.clicked_ok {
+  background-color: #53b401;
+  color: #fff;
+}
+
+#jqt ul li a.clicked_not_ok {
+  background-color: red;
+  color: #fff;
+}
+
+.back {
+  max-width: inherit !important
+}
+
+#reset_failures_link{
+  color: black;
+}
